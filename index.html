@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+          <ul>
+           
+            <a class="navbar-brand  " href="#contect">
+                <img src="Ehab Al Shaman (1).png" aria-multiline="" width="150px" alt="logo"></a> 
+             <li>  <button class="button"><a href="https://ehabalshaman.github.io/ehabalshaman22/" target="_blank">Mijn portofolie</a></button> </li>
+          </ul>
+        </nav>
+      </header>
+
+<div class="crud">
+    <div class="head">
+        <h2>CRUD</h2>
+        <p>proudct manggement system</p>
+    </div>
+
+
+    <div class="inputs">
+        <input type="text" id="title" placeholder="Title">
+        <div class="price">
+            <input  onkeyup="getTotal()" type="number" id="price" placeholder="price">
+            <input  onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+            <input  onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+            <input  onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+            <small  id="total"></small>
+        </div>
+        <input type="number" id="count" placeholder="count">
+        <input type="text" id="category" placeholder="category">
+        <button id="submit">creat</button>
+    </div>
+
+
+    <div class="outputs">
+        <div class="searchBlock">
+            <input onkeyup="searchData(this.value)" type="text" id="search"  placeholder="Search">
+            <div class="btnSearch">
+                <button onclick="getSearchMood(this.id)"  id="searchTitle"> Searche By Title </button>
+                <button onclick="getSearchMood(this.id)"  id="searchCategory"> Searche By Category </button>
+            </div>
+        </div>
+        <div id="deleteAll"></div>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>total</th>
+                <th>category</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+</div>
+
+<footer>
+
+
+
+    <h3> <p>Copyright &copy; 2024 - Alle rechten voorbehouden</p></h3>
+
+
+</footer>
+
+
+<script src="main.js"></script>
+</body>
+</html>
