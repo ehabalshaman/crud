@@ -117,11 +117,13 @@ function showData(){
   }else{
     btnDelete.innerHTML = ``;
   }
+
 }
 };
-
-
 showData();
+
+
+
 
 // delete
 function deleteData (i){
@@ -132,9 +134,12 @@ function deleteData (i){
 }
 
 function deleteAll() {
-  localStorage.clear()
-  dataPro.splice(0)
-  showData()
+  checker();
+  dataPro.splice(0);
+  localStorage.clear(); 
+  showData();
+  window.location.reload();
+ 
 }
 
 
