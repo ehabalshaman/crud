@@ -62,37 +62,47 @@ body{
         }
 
 
-    .crud{
-        width: 80%;
-        margin-top: 20px;
-        margin: auto;
-        justify-content: center;
-        text-align: center;
-    }
-    .head{
-        text-align: center;
-        text-transform: uppercase;
-        margin: 10px 0;
-    }
-    input{
-        width: 100%;
-        height: 60px;
-        outline: none;
-        border: none;
-        background:#111 ;
-        margin: 20px 0;
-        border-radius: 4px;
-        padding: 4px;
-        color: white;
-    }
-    input:focus{
-        background: black;
-        transform: scale(1);
-    }
+        .crud{
+            display: grid;
+            grid-gap: 10px; /* add 10px gap between inputs */
+            width: 80%;
+            margin:  auto;
+    
+        }
+        .head{
+            text-align: center;
+            text-transform: uppercase;
+            margin: 10px 0;
+    
+        }
+        input{
+            background-color: #0f0e0f;
+            width: 100%;
+            height: 60px;
+            margin: 20px 0;
+            padding: 10px;
+            font-size: 30px;
+            border-radius: 30px;
+            border: 1px solid #ccc;
+            color: white;
+            outline: none;
+            transition: 0,8s;
+         }      
+    
+        input:valid{    
+        }
+        input:focus
+            {
+            background: rgb(19, 16, 16);
+            transform: scale(1.1);
+        }
+    
+        .price input{
 
-    .price input{
-        width: 22%;
-    }
+            width: 15%;
+            padding: 10px;
+            margin: 15px 10px 1px 10px;
+        }
     #total{
         background: red;
         padding: 5px 2px;

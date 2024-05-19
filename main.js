@@ -68,6 +68,7 @@ if (mood === "creat"){
     count.style.display = "block";
   }
   clearData()
+  window.location.reload();
 } 
 
   // save localstroage
